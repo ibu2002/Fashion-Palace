@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faashion Palace</title>
+  <link rel="icon" type="image/svg" href="../Images/icon2.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .bgc {
+        background: url(../Images/BG_6.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .language-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        text-align: center;
+        animation: fadeIn 1s ease;
+    }
+    .language-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .language-list li {
+        display: inline-block;
+        margin-right: 10px;
+        background-color: dodgerblue;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .language-list li:hover {
+        background-color: royalblue;
+    }
+    .language-list li.active {
+        background-color: royalblue;
+    }
+    .language-description {
+        margin-top: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .language-description.active {
+        opacity: 1;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .bgc {
+            background: url(../Images/BG_6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #f9f9f9;
+            border: 1px solid lightgray;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="hed">
+      <h1 id="title" class="animated-text">Fashion Palace</h1>
+      <p id="title1" class="animated-text">Fashion is about dreaming and making other people dream</p>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html" ><i class="fa-solid fa-house"></i>&nbsp; Home</a>
+    <a href="AboutUs.html"><i class="fa-solid fa-circle-info"></i>&nbsp; About</a>
+    <a href="Branches.html" ><i class="fa-solid fa-shop"></i>&nbsp; Branches</a>
+    <a href="Protfolio.html" class="active"><i class="fa-solid fa-briefcase"></i>&nbsp; Protfolio</a>
+    <a href="Contact.html" class="right"><i class="fa-solid fa-phone"></i>&nbsp;Contact</a>
+  </div>
+
+  <div class="language-section" style="background: url(../Images/BG_2.jpg); background-position: center; background-size: cover;">
+    <h2>Languages Used</h2>
+    <img src="../Images/html5.svg" alt="" height="50px" width="50px">
+    <img src="../Images/css3-alt.svg" alt="" height="50px" width="50px">
+    <img src="../Images/square-js.svg" alt="" height="50px" width="50px">
+    <ul class="language-list">
+        <li class="active" onclick="showDescription('html')">HTML</li>
+        <li onclick="showDescription('css')">CSS</li>
+        <li onclick="showDescription('js')">JavaScript</li>
+    </ul>
+    <div class="language-description active" id="html-description">
+        <p> <i> HTML is a markup language used for creating the structure and content of web pages.</i></p>
+    </div>
+    <div class="language-description" id="css-description">
+        <p><i>CSS is a stylesheet language used for styling the appearance of web pages.</i></p>
+    </div>
+    <div class="language-description" id="js-description">
+        <p><i>JavaScript is a programming language used for adding interactivity and dynamic behavior to web pages.</i></p>
+    </div>
+</div>
+
+<div class="portfolio-section bgc">
+    <div class="responsive-container-block container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../images/slider1.avif" alt="Portfolio Image 1">
+                <h3>Slide 1</h3>
+                <p>Fashion is the armor to survive the reality of everyday life</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/slider2.avif" alt="Portfolio Image 2">
+                <h3>Slide 2</h3>
+                <p>Style is a way to say who you are without having to speak.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/style2.jpg" alt="Portfolio Image 3" style="height: 180px;">
+                <h3>Slide 3</h3>
+                <p>Fashion is the art of expressing your inner self through your outward appearance.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/style1.jpg" alt="Portfolio Image 4">
+                <h3>Slide 4</h3>
+                <p>Fashion is about dressing according to what's fashionable. Style is more about being yourself.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="footer">
+    <h2>Designed By Ibrahim</h2>
+  </div>
+
+  <script>
+    function showDescription(language) {
+    const descriptions = document.getElementsByClassName('language-description');
+    const listItems = document.getElementsByClassName('language-list')[0].getElementsByTagName('li');
+
+    for (let i = 0; i < descriptions.length; i++) {
+        descriptions[i].classList.remove('active');
+    }
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].classList.remove('active');
+    }
+
+    const selectedDescription = document.getElementById(language + '-description');
+    const selectedItem = document.querySelector('.language-list li[data-language="' + language + '"]');
+
+    selectedDescription.classList.add('active');
+    selectedItem.classList.add('active');
+}
+
+const gridItems = document.querySelectorAll('.grid-item');
+
+// Add click event listener to each grid item
+gridItems.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+
+  </script>
+  
+</body>
+</html>

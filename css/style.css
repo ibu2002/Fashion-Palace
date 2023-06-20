@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+    .header {
+    position: relative;
+    z-index: 2;
+    padding: 80px;
+    background-image: url(../images/gif7.gif);
+    text-decoration-style: solid lightgrey;
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+    color: black;
+    
+    }
+    .hed {
+      background-color: lightyellow;
+      margin-left: 290px;
+      margin-right: 300px;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+    .header h1 {
+    font-size: 40px;
+  }
+   .navbar {
+    
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
+    background-color: transparent;
+    
+   
+  }
+   .navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    float: left;
+    transition: 0.8s;
+  
+  }
+   .navbar a.right {
+    float: right;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: 0.8s;
+  }
+  .row {  
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  .active {
+    background-color: #ddd;
+    color: black;
+  }
+  .img1 {
+    padding-left: 25px;
+    width: 600px;
+    padding-right: 20px;
+  }
+  form label {
+    margin-top: 5px;
+  }
+  .para {
+    height: 400px;
+    
+}
+
+.first {
+    background: none;
+    margin-top: 5px;
+}
+#para1 {
+    margin-top: -10px;
+    text-align: center;
+    color: whitesmoke;
+}
+#sec {
+    /* margin-bottom: 5px; */
+    background-color: whitesmoke;
+    /* margin-top: -10px; */
+}
+.branch {
+            
+            border: 1px solid #ccc;
+            padding: 20px;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            margin-left: 30px;
+            background: lightgray;
+            border-radius: 20px;
+            opacity: 0.6;
+            font-weight: 900;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .b1, .b3 {
+            width: 40%; 
+            height: 85%; 
+            float: left;
+        }
+        .b2, .b4 {
+          margin-right: 30px;
+          width: 40%; 
+          height: 85%; 
+          float: right;
+        }
+        
+        .branch:hover {
+            background-color: #f5f5f5;
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        .branch h3 {
+            margin: 0;
+            font-size: 24px;
+            animation: slide-up 1s;
+            margin-top: 80px;
+        }
+        
+        .branch p {
+            margin-top: 10px;
+            animation: fade-in 1s;
+        }
+        
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slide-up {
+            0% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        /* h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            animation: color-change 2s infinite; 
+        } */
+        
+        @keyframes color-change {
+            0% {
+                color: #fff;
+            }
+            50% {
+                color: #ff8c00;
+            }
+            100% {
+                color: #fff;
+            }
+        }
+        .mySlides1 {
+            display: none;
+           
+        }
+ /* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot1{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.img_radius {
+   border-radius: 20px;
+   width:100%; 
+   height:350px;
+}
+
+
+@keyframes fade {
+  from {
+  opacity: .4;
+  transform:scale(0.5);
+  transition: 3s;
+  
+  } 
+  to {
+  opacity: 1;
+  transform: scale(1);
+  transition: 3s;
+  
+  }
+}
+.mySlides {
+    display:none;
+    width:100%;
+    height:390px;
+    border-radius: 20px;
+}
+.btn {
+    border-radius: 10px;
+}
+
+.animated-text {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+   
+  

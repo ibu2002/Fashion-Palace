@@ -1,0 +1,18 @@
+div {
+    height: 300px;
+    
+}
+
+.first {
+    background-color: #004D98;
+}
+h1 {
+    margin-top: -10px;
+    text-align: center;
+    color: #EDBB00;
+}
+#sec {
+    /* margin-bottom: 5px; */
+    background-color: #EDBB00;
+    /* margin-top: -10px; */
+}
